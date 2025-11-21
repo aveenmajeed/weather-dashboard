@@ -2,7 +2,7 @@
 from weather_api import WeatherAPI
 from utils import print_current_weather, print_forecast, print_ascii_chart
 
-API_KEY = "bcaeb20389984c3a5875bbf82ea64260"   # ← replace this with your actual key
+API_KEY = "bcaeb20389984c3a5875bbf82ea64260"  
 
 weather = WeatherAPI(API_KEY)
 
@@ -19,7 +19,7 @@ def main():
             print("Detecting your location...")
             detected_city = weather.get_local_city()
             if detected_city is None:
-                print("Could not detect your location. Try entering a city manually.")
+                print("Could not detect your location. Try entering a city again")
                 continue
 
             print(f"Detected city: {detected_city}")
